@@ -21,3 +21,11 @@ func Test_Reverse_Integer(t *testing.T) {
 		t.Fatalf("Expected: %d | Actual: %d", expected, result)
 	}
 }
+
+func Test_Palindrome(t *testing.T) {
+	result := isPalindrome(10)
+	expected := false
+	if result != expected {
+		t.Fatalf("Expected: %v | Actual: %v", expected, result)
+	}
+}
